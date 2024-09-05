@@ -14,11 +14,14 @@ To install ansible:
             ansible_python_interpreter=/usr/bin/python3
 
 
-
+sudo hostnamectl set-hostname  ansible-master
 =================================================
 
 From ansible-master: add the public key to worker node authorized key file in  .ssh/authorized_keys. 
+ssh-keygen
+/home/ubuntu/.ssh
 
+generate the key in slave and add that to master --authorized_keys file
 
 
 To add ansible host entry as below:
